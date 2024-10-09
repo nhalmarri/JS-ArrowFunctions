@@ -22,7 +22,19 @@ console.log(sum(5, 4));
 // Write a simple arrow function that squares a number.
 
 const arrowSquares = (num) => {
-  return num * 2;
+  const numberSquared = Math.pow(num, 2);
+
+  return numberSquared;
 };
 
 console.log(arrowSquares(5));
+
+// [🌶️🌶️] Create an arrow function that takes an array of numbers and returns a new array with each number squared.
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const arrayOfNumbersSquared = (numArray) => {
+  return numArray.map(arrowSquares);
+};
+
+console.log(arrayOfNumbersSquared(numbers));
